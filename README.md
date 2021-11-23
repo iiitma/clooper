@@ -21,7 +21,7 @@ The three applications should share the following:
 
 ### Assumptions:
 
-All three applications share the same API_ENDPOINT endpoint https://clooper-api.ap76f32dc77r0.eu-west-2.cs.amazonlightsail.com/login
+All three applications share the same API_ENDPOINT endpoint https://clooper-api.ap76f32dc77r0.eu-west-2.cs.amazonlightsail.com/api/v2
 
 ### Restrictions:
 
