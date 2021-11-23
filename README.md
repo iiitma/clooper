@@ -10,7 +10,7 @@ The three applications should share the following:
     2. In `UserService` implement a `create` method to create a new user account by POST to /users; required fields are: email, password, first_name, last_name, accepts_terms (default to true)
     3. In `PropertyService` implement a `fetch` method to GET list of properties from /properties
     4. In `DealService` implement a `fetch` method to GET list of deals from /deals
-    5. In the `UrlInterceptor`, implement the `intercept` method to prepend the API_ENDPOINT in environments to the request URL, if the request does not begin with http/s.
+    5. In the `UrlInterceptor`, implement the `intercept` method to prepend the `API_ENDPOINT` in environments to the request URL, if the request URL does not begin with http:// or https://.
     6. In the `AuthGaurd` implement the `canActivate` method to redirect to /login page if the user is not logged in. Hint: put a method in `AuthService` to help you check whether a user is logged in or not.
 3. A shared library called `ClooperCommon`, to be located in `projects/clooper/common` of your projects directory. The library should comprise of the following components, directives and pipes:
     * a `pagination` component (wraps pagination in Bootstrap 5)
@@ -21,7 +21,7 @@ The three applications should share the following:
 
 ### Assumptions:
 
-All three applications share the same API_ENDPOINT endpoint https://clooper-api.ap76f32dc77r0.eu-west-2.cs.amazonlightsail.com/api/v2
+All three applications share the same `API_ENDPOINT` endpoint https://clooper-api.ap76f32dc77r0.eu-west-2.cs.amazonlightsail.com/api/v2
 
 ### Restrictions:
 
@@ -35,12 +35,11 @@ All three applications share the same API_ENDPOINT endpoint https://clooper-api
 
 All three applications should launch on different ports, as follows
 
-    1. `yarn run savings` should launch the Savings app on port 4311
-    2. `yarn run lettings` should launch the Lettings app on port 4322
-    3. `yarn run trades` should launch the Trades app on port 4333
+`yarn run savings` should launch the Savings app on port 4311
+`yarn run lettings` should launch the Lettings app on port 4322
+`yarn run trades` should launch the Trades app on port 4333
 
 The apps do not necessarily need to do anything, but they must run and lint.
 
-    1. `yarn run lint` should just work!
-
+`yarn run lint` should just work!
 
