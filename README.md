@@ -35,9 +35,9 @@ All three applications share the same `API_ENDPOINT` endpoint https://clooper-a
 
 All three applications should launch on different ports, as follows
 
-`yarn run savings` should launch the Savings app on port 4311
-`yarn run lettings` should launch the Lettings app on port 4322
-`yarn run trades` should launch the Trades app on port 4333
+1. `yarn run savings` should launch the Savings app on port 4311
+2. `yarn run lettings` should launch the Lettings app on port 4322
+3. `yarn run trades` should launch the Trades app on port 4333
 
 The apps do not necessarily need to do anything, but they must run and lint.
 
